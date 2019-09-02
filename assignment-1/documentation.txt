@@ -1,0 +1,2 @@
+This Program Runs with a switching home page that displays a green page link or a blue page link.
+This is done by using the Math.random function that shows page 50% of time. The blue and green page can also be accessed by using /blue or /green in url bar. If the link is not recognized you will recieve an error message of a 404 error. 
