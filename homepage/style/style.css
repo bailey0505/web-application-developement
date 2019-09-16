@@ -1,0 +1,39 @@
+#homepage {
+    background-image: url('pittsburgh.jpg');
+    
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.headshot {
+    width: 200px;
+    height: 200px;
+}
+
+.container.headshot-div {
+    float: left;
+}
+
+.container.aboutme {
+    background-color: #FF3721;
+    width: 100%;
+    display: inline-flex;
+    margin-top: 50px;
+}
+
+.container.aboutme h1{
+    display: block;
+    float: left;
+}
+
+.container.skills {
+    background-color: #801C11;
+    width: 100%;
+    display: inline-flex;
+    color: white;
+    margin-top: 50px;
+}
+
