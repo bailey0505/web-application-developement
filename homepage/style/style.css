@@ -1,4 +1,4 @@
-#homepage {
+body {
     background-image: url('pittsburgh.jpg');
     
     height: 100%;
@@ -35,5 +35,22 @@
     display: inline-flex;
     color: white;
     margin-top: 50px;
+}
+.navbar a{
+    color: white !important;
+}
+
+.headshot {
+    position: relative;
+    z-index: 999999999;
+}
+
+
+/* Contact Page Styles */
+
+.contact-form-label {
+	color: white; 
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
 }
 

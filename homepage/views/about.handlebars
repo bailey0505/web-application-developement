@@ -1,0 +1,21 @@
+<div class="about-page" style="margin-top: 10%;">
+    <div class="container aboutme" style="" data-aos="fade-right" data-aos-duration="1500">
+        <div class="row">
+            <div class="col">
+                <h1 class="" style="font-family: 'Montserrat', sans-serif;">About Me </h1> <br /><br/><p style="float: left; font-family: 'Oswald', sans-serif;">{{ aboutme }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="container skills" style="" data-aos="fade-right" data-aos-duration="1500">
+        <div class="row">
+            <div class="col">
+                <h1 class="" style="font-family: 'Montserrat', sans-serif;">Skills</h1> <br />
+                <ul>
+                    {{#each skills}}
+                        <li style="font-family: 'Oswald', sans-serif;">{{ this }}</li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,46 +1,46 @@
-
-<div id="homepage" data-aos="fade-in" data-aos-duration="1000">
-    <link rel="stylesheet" href="/style.css"> 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/style.css"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-   
-   
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<title>Bailey Rotellini</title>
     <script>
         AOS.init();
     </script>
     
-    <div class="container headshot-div" data-aos="fade-down" data-aos-duration="1500">
-        <img class="headshot" src="bailey.jpg" />
-    </div>
-    <br />
-    <div class="container aboutme" style="" data-aos="fade-right" data-aos-duration="1500">
-        <div class="row">
-            <div class="col">
-                <h1 class="" style="font-family: 'Montserrat', sans-serif;">About Me </h1> <br /><br/><p style="float: left; font-family: 'Oswald', sans-serif;">{{ aboutme }}</p>
-            </div>
-        </div>
-       
-    
-    </div>
-     <div class="container skills" style="" data-aos="fade-right" data-aos-duration="1500">
-        <div class="row">
-            <div class="col">
-                <h1 class="" style="font-family: 'Montserrat', sans-serif;">Skills</h1> <br />
-                <ul>
-                    {{#each skills}}
-                        <li style="font-family: 'Oswald', sans-serif;">{{ this }}</li>
-                    {{/each}}
-                </ul>
-            </div>
-        </div>
-       
-    
-    </div>
+
+
+<div id="homepage" data-aos="fade-in" data-aos-duration="1000">
+<!--Table That Shows Current Classes -->
+	<table class="table table-dark table-hover" style="margin-top: 15%; color: white;">
+		<thead>
+			<tr>
+				<th><h3>Courses</h3></th>
+			</tr>
+		</thead>
+		<tr>
+			<th scope="col">Course Name</th>
+			<th scope="col">Course Code</th>
+			<th scope="col">Course Description</th>
+			<th scope="col">Course Credits</th>
+			<th scope="col">Course Professor</th>
+		</tr>
+		<tbody>
+			{{#each classes}}
+				<tr>
+					<td>{{ class_name }}</td>
+					<td>{{ class_code }}</td>
+					<td>{{ class_description }}</td>
+					<td>{{ credits }}</td>
+					<td>{{ instructor }}</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
 </div>
+ 

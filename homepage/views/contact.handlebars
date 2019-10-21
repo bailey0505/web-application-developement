@@ -1,0 +1,48 @@
+
+<div class="contact-page" style="margin-top: 20%">
+	<div class="contact-form-div" style="padding: 20px;">
+		<form id="contact-form"type="POST" action="/submit" role="form">
+			<div class="row">
+				<div class="col-md-6 col-xs-12 col-s-12">
+					<label class="contact-form-label" for="name">Name</label><input type="text" class="form-control" id="name" name="name" placeholder="First name and Last name" />
+				</div>
+				<div class="col-md-6 col-xs-12 col-s-12 ">
+					<label class="contact-form-label" for="email">Email</label><input type="text" class="form-control" id="email" name="email" placeholder="example@emample.com" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-xs-12 col-s-12">
+					<label class="contact-form-label" for="reason">Reason For Contacting</label><textarea class="form-control" id="reason" name="reason" placeholder="Enter Your reason for contacting" ></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-xs-12" style="text-align: center; margin-top: 10px;"> 
+					<button class="btn btn-primary" type="submit">Contact Me Now !</button> 
+				</div> 
+			</div>
+		</form>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function(){ 
+		$('#contact-form').on('submit', function(evt){
+			evt.preventDefault();
+			var action = $(this).attr('action');
+			var data = $("#contact-form").serialize();
+			
+			$.ajax({
+				url: action,
+				type: 'POST',
+				data: data,
+				success: function(data){
+					alert("here");
+				},
+				error: function(){
+					alert("error");
+				}
+			});
+		});
+	});
+</script> 
+

@@ -1,16 +1,22 @@
 {
   "name": "homepage",
   "version": "1.0.0",
-  "description": "Home page assignment for web application developement",
+  "description": "Home page for web application developement",
   "main": "controller.js",
   "directories": {
     "lib": "lib"
   },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1",
+    "zombie": "^6.1.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
-    "Homepage"
+    "homepage"
   ],
   "author": "Bailey Rotellini",
   "license": "ISC"
